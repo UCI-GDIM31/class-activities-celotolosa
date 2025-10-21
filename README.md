@@ -20,6 +20,20 @@ Since the method is not being returned, it starts with void. The parameter is th
 The relationship between classes and components are like a tree. The scene makes up a game, which is made up of game objects, which have components. A component can be a script which is made up of classes which can be defined as a monobehaviour. In classes, methods are defined and called within which have variables and sets of code.
 
 The balls get extremely bright because the ball is getting multiplied by a brightness multiplier
+
+### W4
+Table #18
+Lines 17, 28, and 32.
+Line 17 is a private boolean member variable under the CatW4 class
+Line 28 is an if statement, checking whether the user is pressing space and is on the ground, so if if they're jumping, _isGrounded is false
+Line 32  _isGrounded member variable set to false, BECAUSE user is jumping
+
+The objects that we added to the rigidbodies are the cat and ball. I checked IsTrigger on the goal. 
+
+My game didn't work when I did this, because when I collided with the goal my cat started spinning. This was because I didnt freeze the Z Axis on my cat, so it wouldn't stop. It also depended on my specific capsule collider size. 
+
+
+
 ## Open-Source Assets
 ### W1
 - Animals: https://assetstore.unity.com/packages/3d/characters/animals/animals-free-animated-low-poly-3d-models-260727 

@@ -1,3 +1,5 @@
+using System.Runtime.CompilerServices;
+using JetBrains.Annotations;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -7,6 +9,8 @@ public class SoccerBall : MonoBehaviour
     [SerializeField] private TMP_Text _pointsText;
     [SerializeField] private TMP_Text _timeText;
     [SerializeField] private ParticleSystem _goalVFX;
+    public int points = 0;
+    public float _time = 0;
 
     // STEP 1 -----------------------------------------------------------------
     // The OnTriggerEnter method is a collision method called by Unity that
@@ -16,15 +20,15 @@ public class SoccerBall : MonoBehaviour
     // You will need to read the documentation here:
     // https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Collider.OnTriggerEnter.html
     //      which has an example of a class using this method :)
-    //
+    // void OnTriggerEnter3D(Collider3D collider)
     // You'll also need to have all of your colliders set up properly in the Scene ;)
     //
-    // Also, uncomment and FIX the Debug.Log line.
+    // Also,    uncomment and FIX the Debug.Log line.
 
-    //private ?? ??
-    //{
+    private void OnTriggerEnter(Collider x)
+    {
         // finish STEP 1 by uncommenting and fixing the below line!
-        //Debug.Log(SoccerBall detected a collision with a trigger collider!);
+        // Debug.Log("SoccerBall detected a collision with a trigger collider!");
 
         // STEP 2 -------------------------------------------------------------
         // Write an IF STATEMENT to check if the game object we collided with
@@ -36,26 +40,53 @@ public class SoccerBall : MonoBehaviour
 
 
         // STEP 2 -------------------------------------------------------------
-    //}
+        if (x.gameObject.tag == "Goal")
+        {
+            MadeGoal();
+            _goalVFX.Play();
+            points++;
+
+
+        }
+    }
 
     // STEP 1 -----------------------------------------------------------------
-
+    
+    
 
     // STEP 3 -----------------------------------------------------------------
     // Next, we're going to make a method named MadeGoal to call if the
     //      SoccerBall collided with an object tagged "Goal".
     // MadeGoal RETURNS NOTHING, and has NO INPUT.
-    // 
-    // Once you've created MadeGoal,
-    //      move your Debug.Log() statement into MadeGoal, and
-    //      call MadeGoal from inside your if statement in OnTriggerEnter.
+    public void MadeGoal()
+    {
+        Debug.Log("SoccerBall detected colliding with Goal");
+        _pointsText.text = "points: " + points;
+        _time = 0f;
+        
+        
+
+    }
+    void Update()
+    {
+        Debug.Log("update");
+        _time += Time.deltaTime;
+
+        _timeText.text = "time since last goal: " + (_time);
+
+    }
+}
+// Once you've created MadeGoal,
+//      move your Debug.Log() statement into MadeGoal, and
+//      call MadeGoal from inside your if statement in OnTriggerEnter.
+
+// STEP 4 -------------------------------------------------------------
+// _goalVFX is a ParticleSystem, a Component for creating VFX.
+// ParticleSystem has a method named Play() that displays the VFX:
+// https://docs.unity3d.com/6000.0/Documentation/ScriptReference/ParticleSystem.Play.html 
+//
+// Call Play on _goalVFX.
     
-        // STEP 4 -------------------------------------------------------------
-        // _goalVFX is a ParticleSystem, a Component for creating VFX.
-        // ParticleSystem has a method named Play() that displays the VFX:
-        // https://docs.unity3d.com/6000.0/Documentation/ScriptReference/ParticleSystem.Play.html 
-        //
-        // Call Play on _goalVFX.
 
         // STEP 4 -------------------------------------------------------------
     
@@ -88,6 +119,7 @@ public class SoccerBall : MonoBehaviour
     //      player scored a goal, and update _timeText with that time.
     // Your time variable should increase EVERY FRAME with how much TIME has 
     //      passed, and reset to ZERO when we MAKE A GOAL.
+
     //
     // You will need to:
     //      1. Use a Unity method to increase your time variable every frame
@@ -95,4 +127,3 @@ public class SoccerBall : MonoBehaviour
     //      2. Use the MadeGoal method to reset your
     //              time variable when the player makes a goal. 
     // STEP 6 -----------------------------------------------------------------
-}
