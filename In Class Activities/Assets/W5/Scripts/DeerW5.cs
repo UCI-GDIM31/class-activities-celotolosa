@@ -12,7 +12,11 @@ public class DeerW5 : MonoBehaviour
 
     void Start()
     {
+        navigation = GetComponent<NavMeshAgent>();
         
+        
+        navigation.SetDestination(target.position);
     }
+    
 
 }

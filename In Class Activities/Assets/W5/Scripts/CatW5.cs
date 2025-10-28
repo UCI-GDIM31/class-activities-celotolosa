@@ -16,6 +16,7 @@ public class CatW5 : MonoBehaviour
         // This CatW5 class is a Component on the Cat GameObject. It controls
         //      the cat's movement.
         //
+
         // The Cat should move forwards and backwards with the W and S keys.
         //
         // Use the "static properties" listed under the Vector3 documentation:
@@ -24,6 +25,16 @@ public class CatW5 : MonoBehaviour
         // to change the value of the translation variable,
         // and then call Translate on this GameObject's transform to make it move
         // using translation, _moveSpeed, and Time.deltaTime.
+        Vector3 forward = Vector3.forward;
+        if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow))
+        {
+            transform.Translate(forward * _moveSpeed * Time.deltaTime);
+        }
+        else if (Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.DownArrow))
+        {
+            transform.Translate(-forward * _moveSpeed * Time.deltaTime);
+        }
+        
         //
         // Ask yourself:
         //      Which axis moves the cat forwards and backwards?
