@@ -32,6 +32,16 @@ The objects that we added to the rigidbodies are the cat and ball. I checked IsT
 
 My game didn't work when I did this, because when I collided with the goal my cat started spinning. This was because I didnt freeze the Z Axis on my cat, so it wouldn't stop. It also depended on my specific capsule collider size. 
 
+### W5
+Activity 1: Collaborative Learning
+My question: What is the difference between Vector and Transform. 
+Answer:
+There are vectors within transform that allow the gameObject to move in different directions
+
+Activity 2: Pair Programming
+This class needs member variables including movement, that change depending on the navigation's location
+
+The Start() unity method should be used in this script since it doesn't need to update every frame and is not checking for anything from the user
 
 
 ## Open-Source Assets
