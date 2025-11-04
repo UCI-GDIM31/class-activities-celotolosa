@@ -44,8 +44,11 @@ This class needs member variables including movement, that change depending on t
 The Start() unity method should be used in this script since it doesn't need to update every frame and is not checking for anything from the user
 
 ### W6
+Category assignment: General C# Coding - [Table 18 Outline]([text](https://docs.google.com/document/d/1_Zwo3XH1VQM32Ym-pGFQQy0nj1sO6sBX9mo0lAvqYQw/edit?usp=sharing)) 
 
-
+The variables that are needed, are a transform member variable to reference for the bats
+Two methods that both enable the bats to chase, and stop them from chasing
+An adjustable variable in the inspector for the speed of bats
 
 ## Open-Source Assets
 ### W1
