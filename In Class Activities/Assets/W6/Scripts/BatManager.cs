@@ -131,8 +131,8 @@ public class BatManager : MonoBehaviour
         // /* starts the comments, and */ ends it.
         // Simply uncomment the below lines by removing the /* and */ to finish.
 
-        /*
-        int index = System.Array.IndexOf(_bats, bat);
+        
+        int index = System.Array.IndexOf(bats, bat);
         
         GridLayoutGroup layout = bat.GetComponentInChildren<GridLayoutGroup>();
         if (layout != null && _newTextTimers[index] >= _timeBetweenNewMessages)
@@ -141,7 +141,7 @@ public class BatManager : MonoBehaviour
             TMP_Text textObj = Instantiate(_reactionUiPrefab, layout.transform);
             textObj.text = message;
         }
-        */
+        
 
         // STEP 8 -------------------------------------------------------------
     }
