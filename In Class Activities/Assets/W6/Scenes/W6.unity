@@ -1340,6 +1340,7 @@ GameObject:
   - component: {fileID: 429572120}
   - component: {fileID: 429572119}
   - component: {fileID: 429572122}
+  - component: {fileID: 429572123}
   m_Layer: 0
   m_Name: Bat (2)
   m_TagString: Untagged
@@ -1456,6 +1457,26 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BatW6
   speed: 1
+--- !u!114 &429572123
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 429572118}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17bad3c7a15e04c2e855dac3d3627284, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BatManager
+  _overlapDistance: 0
+  _interactDistance: 0
+  _timeBetweenNewMessages: 0.5
+  _playerTransform: {fileID: 0}
+  _reactionUiPrefab: {fileID: 0}
+  bats: []
+  _messages: []
+  _newTextTimers: []
 --- !u!1 &524616927
 GameObject:
   m_ObjectHideFlags: 0
@@ -5883,6 +5904,7 @@ GameObject:
   - component: {fileID: 880500751}
   - component: {fileID: 880500750}
   - component: {fileID: 880500753}
+  - component: {fileID: 880500754}
   m_Layer: 0
   m_Name: Bat (3)
   m_TagString: Untagged
@@ -5999,6 +6021,26 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BatW6
   speed: 1
+--- !u!114 &880500754
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 880500749}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17bad3c7a15e04c2e855dac3d3627284, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BatManager
+  _overlapDistance: 0
+  _interactDistance: 0
+  _timeBetweenNewMessages: 0.5
+  _playerTransform: {fileID: 0}
+  _reactionUiPrefab: {fileID: 0}
+  bats: []
+  _messages: []
+  _newTextTimers: []
 --- !u!1 &925081785
 GameObject:
   m_ObjectHideFlags: 0
@@ -6110,8 +6152,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17bad3c7a15e04c2e855dac3d3627284, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BatManager
-  _overlapDistance: 0
-  _interactDistance: 0
+  _overlapDistance: 0.43
+  _interactDistance: 0.87
   _timeBetweenNewMessages: 0.5
   _playerTransform: {fileID: 137124478}
   _reactionUiPrefab: {fileID: 0}
@@ -6143,6 +6185,7 @@ GameObject:
   - component: {fileID: 1077408845}
   - component: {fileID: 1077408844}
   - component: {fileID: 1077408847}
+  - component: {fileID: 1077408848}
   m_Layer: 0
   m_Name: Bat (7)
   m_TagString: Untagged
@@ -6259,6 +6302,26 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BatW6
   speed: 1
+--- !u!114 &1077408848
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1077408843}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17bad3c7a15e04c2e855dac3d3627284, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BatManager
+  _overlapDistance: 0
+  _interactDistance: 0
+  _timeBetweenNewMessages: 0.5
+  _playerTransform: {fileID: 0}
+  _reactionUiPrefab: {fileID: 0}
+  bats: []
+  _messages: []
+  _newTextTimers: []
 --- !u!1 &1191025099
 GameObject:
   m_ObjectHideFlags: 0
@@ -7412,6 +7475,7 @@ GameObject:
   - component: {fileID: 1267810458}
   - component: {fileID: 1267810457}
   - component: {fileID: 1267810460}
+  - component: {fileID: 1267810461}
   m_Layer: 0
   m_Name: Bat (4)
   m_TagString: Untagged
@@ -7528,6 +7592,26 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BatW6
   speed: 1
+--- !u!114 &1267810461
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1267810456}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17bad3c7a15e04c2e855dac3d3627284, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BatManager
+  _overlapDistance: 0
+  _interactDistance: 0
+  _timeBetweenNewMessages: 0.5
+  _playerTransform: {fileID: 0}
+  _reactionUiPrefab: {fileID: 0}
+  bats: []
+  _messages: []
+  _newTextTimers: []
 --- !u!1 &1297971674
 GameObject:
   m_ObjectHideFlags: 0
@@ -7793,6 +7877,7 @@ GameObject:
   - component: {fileID: 1388478207}
   - component: {fileID: 1388478206}
   - component: {fileID: 1388478209}
+  - component: {fileID: 1388478210}
   m_Layer: 0
   m_Name: Bat (5)
   m_TagString: Untagged
@@ -7909,6 +7994,26 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BatW6
   speed: 1
+--- !u!114 &1388478210
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1388478205}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17bad3c7a15e04c2e855dac3d3627284, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BatManager
+  _overlapDistance: 0
+  _interactDistance: 0
+  _timeBetweenNewMessages: 0.5
+  _playerTransform: {fileID: 0}
+  _reactionUiPrefab: {fileID: 0}
+  bats: []
+  _messages: []
+  _newTextTimers: []
 --- !u!1 &1465828718
 GameObject:
   m_ObjectHideFlags: 0
@@ -8083,6 +8188,7 @@ GameObject:
   - component: {fileID: 1492021328}
   - component: {fileID: 1492021327}
   - component: {fileID: 1492021330}
+  - component: {fileID: 1492021331}
   m_Layer: 0
   m_Name: Bat (1)
   m_TagString: Untagged
@@ -8199,6 +8305,26 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BatW6
   speed: 1
+--- !u!114 &1492021331
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1492021326}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17bad3c7a15e04c2e855dac3d3627284, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BatManager
+  _overlapDistance: 0
+  _interactDistance: 0
+  _timeBetweenNewMessages: 0.5
+  _playerTransform: {fileID: 0}
+  _reactionUiPrefab: {fileID: 0}
+  bats: []
+  _messages: []
+  _newTextTimers: []
 --- !u!1 &1553064438
 GameObject:
   m_ObjectHideFlags: 0
@@ -8271,6 +8397,7 @@ GameObject:
   - component: {fileID: 1583297590}
   - component: {fileID: 1583297589}
   - component: {fileID: 1583297592}
+  - component: {fileID: 1583297593}
   m_Layer: 0
   m_Name: Bat (9)
   m_TagString: Untagged
@@ -8387,6 +8514,26 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BatW6
   speed: 1
+--- !u!114 &1583297593
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1583297588}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17bad3c7a15e04c2e855dac3d3627284, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BatManager
+  _overlapDistance: 0
+  _interactDistance: 0
+  _timeBetweenNewMessages: 0.5
+  _playerTransform: {fileID: 0}
+  _reactionUiPrefab: {fileID: 0}
+  bats: []
+  _messages: []
+  _newTextTimers: []
 --- !u!1 &1588197157
 GameObject:
   m_ObjectHideFlags: 0
@@ -8519,6 +8666,7 @@ GameObject:
   - component: {fileID: 1639799782}
   - component: {fileID: 1639799781}
   - component: {fileID: 1639799784}
+  - component: {fileID: 1639799785}
   m_Layer: 0
   m_Name: Bat
   m_TagString: Untagged
@@ -8635,6 +8783,26 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BatW6
   speed: 1
+--- !u!114 &1639799785
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1639799780}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17bad3c7a15e04c2e855dac3d3627284, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BatManager
+  _overlapDistance: 0
+  _interactDistance: 0
+  _timeBetweenNewMessages: 0.5
+  _playerTransform: {fileID: 0}
+  _reactionUiPrefab: {fileID: 0}
+  bats: []
+  _messages: []
+  _newTextTimers: []
 --- !u!1 &1640385369
 GameObject:
   m_ObjectHideFlags: 0
@@ -8971,6 +9139,7 @@ GameObject:
   - component: {fileID: 1973095152}
   - component: {fileID: 1973095151}
   - component: {fileID: 1973095154}
+  - component: {fileID: 1973095155}
   m_Layer: 0
   m_Name: Bat (6)
   m_TagString: Untagged
@@ -9087,6 +9256,26 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BatW6
   speed: 1
+--- !u!114 &1973095155
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1973095150}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17bad3c7a15e04c2e855dac3d3627284, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BatManager
+  _overlapDistance: 0
+  _interactDistance: 0
+  _timeBetweenNewMessages: 0.5
+  _playerTransform: {fileID: 0}
+  _reactionUiPrefab: {fileID: 0}
+  bats: []
+  _messages: []
+  _newTextTimers: []
 --- !u!1 &1975271561
 GameObject:
   m_ObjectHideFlags: 0
@@ -9261,6 +9450,7 @@ GameObject:
   - component: {fileID: 2130503365}
   - component: {fileID: 2130503364}
   - component: {fileID: 2130503367}
+  - component: {fileID: 2130503368}
   m_Layer: 0
   m_Name: Bat (8)
   m_TagString: Untagged
@@ -9377,6 +9567,26 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BatW6
   speed: 1
+--- !u!114 &2130503368
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2130503363}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17bad3c7a15e04c2e855dac3d3627284, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BatManager
+  _overlapDistance: 0
+  _interactDistance: 0
+  _timeBetweenNewMessages: 0.5
+  _playerTransform: {fileID: 0}
+  _reactionUiPrefab: {fileID: 0}
+  bats: []
+  _messages: []
+  _newTextTimers: []
 --- !u!1 &2144879476
 GameObject:
   m_ObjectHideFlags: 0
