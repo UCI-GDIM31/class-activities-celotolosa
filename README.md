@@ -50,6 +50,14 @@ The variables that are needed, are a transform member variable to reference for 
 Two methods that both enable the bats to chase, and stop them from chasing
 An adjustable variable in the inspector for the speed of bats
 
+### W7
+Activity 1 Google Doc: https://docs.google.com/document/d/1nSQTsrKYDlO6F7FmIx6hmC3CpusIQNMKURDBw7u9siU/edit?usp=sharing
+Role: Physics
+
+Activity 2 Sketch Link: https://sketch.io/sketchpad/
+Question: What was wrong with Step 2? 
+- I believe the problem with step 2 was the incorrect use of the transform. It is supposed to be translate because position is based on the world space, while translate is relative to the gameObject and is local.
+
 ## Open-Source Assets
 ### W1
 - Animals: https://assetstore.unity.com/packages/3d/characters/animals/animals-free-animated-low-poly-3d-models-260727 

@@ -1,5 +1,7 @@
+using System;
 using UnityEditor.ShaderGraph.Drawing.Inspector.PropertyDrawers;
 using UnityEngine;
+using UnityEngine.Rendering.Universal.Internal;
 
 public class MuskratW7 : MonoBehaviour
 {
@@ -46,8 +48,10 @@ public class MuskratW7 : MonoBehaviour
         //
         // You might want to look below Step 3 for an example :D
         
-        float leftright = Input.GetAxis("Horizontal");
         
+        float leftright = Input.GetAxis("Horizontal");
+        Vector3 worldUp = transform.TransformDirection(Vector3.right);
+        transform.RotateAround(transform.position, worldUp, leftright * _rotationSpeed * Time.deltaTime);
 
 
         // STEP 3 -------------------------------------------------------------
@@ -113,8 +117,13 @@ public class MuskratW7 : MonoBehaviour
         // You may also find the absolute value method, Mathf.Abs(), helpful:
         //      https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Mathf.Abs.html
 
-        
+
         // STEP 4 -------------------------------------------------------------
+        bool flying = Mathf.Abs(_rigidbody.linearVelocity.y) >= 0.2f;
+        _animator.SetBool("flying", flying);
+
+        bool running = _rigidbody.linearVelocity.x != 0.0f;
+        _animator.SetBool("running", running);
     }
 
     // ------------------------------------------------------------------------
