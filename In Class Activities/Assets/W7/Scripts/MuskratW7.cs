@@ -73,6 +73,10 @@ public class MuskratW7 : MonoBehaviour
 
 
         // STEP 5 -------------------------------------------------------------
+        _animator.SetBool("flying", false);
+
+        bool running = Mathf.Abs(leftright) != 0.0f || Mathf.Abs(forward) != 0.0f;
+        _animator.SetBool("running", running);
     }
 
     // ------------------------------------------------------------------------
