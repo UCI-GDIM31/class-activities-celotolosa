@@ -50,7 +50,7 @@ public class MuskratW7 : MonoBehaviour
         
         
         float leftright = Input.GetAxis("Horizontal");
-        Vector3 worldUp = transform.TransformDirection(Vector3.right);
+        Vector3 worldUp = transform.TransformDirection(Vector3.up);
         transform.RotateAround(transform.position, worldUp, leftright * _rotationSpeed * Time.deltaTime);
 
 
