@@ -1,3 +1,4 @@
+using UnityEditor.ShaderGraph.Drawing.Inspector.PropertyDrawers;
 using UnityEngine;
 
 public class MuskratW7 : MonoBehaviour
@@ -89,6 +90,8 @@ public class MuskratW7 : MonoBehaviour
 
         // STEP 1 -------------------------------------------------------------
 
+        transform.Rotate(leftright * Vector3.up * _rotationSpeed * Time.deltaTime);
+
 
         // STEP 2 -------------------------------------------------------------
         float movement = Input.GetAxis("Vertical");
@@ -96,7 +99,9 @@ public class MuskratW7 : MonoBehaviour
         // This line of code is incorrect. 
         // Replace it with a different line of code that uses 'movement' to
         //      move the Muskrat forwards and backwards.
-        transform.position += movement * Vector3.forward * _moveSpeed * Time.deltaTime;
+
+        //transform.position 
+        transform.Translate(Vector3.forward * movement * _moveSpeed * Time.deltaTime);
 
         // STEP 2 -------------------------------------------------------------
 
